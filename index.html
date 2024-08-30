@@ -4,9 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Festival de musica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="dist/css/app.css">
 </head>
 <body>
-    <h1>hola mundo con sass</h1>
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <h1>Techno & EDM Festival</h1>
+
+            <nav class="navegacion-principal">
+                <a href="">LineUp</a>
+                <a href="">Galeria</a>
+                <a href="">Boletos</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="video">
+        <div class="overlay">
+            <div class="contenedor contenido-video">
+                <h2>Techno & EDM Festival</h2>
+                <p>Agosto 2025, Colombia, Medellin.</p>
+            </div>
+        </div>
+        <video autoplay muted loop>
+            <source src="video/dj.mp4" type="video/mp4"/>
+            <source src="video/dj.webm" type="video/webm"/>
+            <source src="video/dj.ogv" type="video/ogv"/>
+        </video>
+    </div>
+
+    <section class="sobre-festival">
+        <div class="imgaen">
+            <img src="src/img/imagen_dj.jpg" alt="Imagen Festival">
+        </div>
+        <div class="contenido-festival">
+            <h3>Tecnno & EDM Festival</h3>
+            <p class="fecha">Agosto 2025, Colombia, Medellin</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam autem doloribus quam, animi veniam dolorem tempore totam explicabo mollitia sint ab commodi nisi nam cum fugit voluptatibus veritatis ullam. Qui!</p>
+        </div>
+    </section>
 </body>
 </html>

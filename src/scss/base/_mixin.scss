@@ -1,0 +1,30 @@
+@use 'variables' as v;
+
+@mixin telefono {
+    @media(max-width: v.$telefono) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media(max-width: v.$tablet) {
+        @content;
+    }
+}
+
+@mixin destkop {
+    @media(max-width: v.$desktop) {
+        @content;
+    }
+}
+@mixin destkopXL {
+    @media(max-width: v.$desktopXL) {
+        @content;
+    }
+}
+
+@mixin contenedor {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}

@@ -1,0 +1,46 @@
+@use 'base/variables' as v; 
+@use 'base/mixin' as m;
+
+.header {
+    background-color: v.$verde;
+    @include m.telefono {
+
+    }
+    .contenido-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+        @include m.telefono {
+            display: inline-block;
+        }
+    }
+
+    h1 {
+        color: v.$blanco;
+        margin: 0;
+        @include m.telefono {
+            margin-bottom: 5rem;
+            text-align: center;
+        }
+    }
+}
+
+.navegacion-principal {
+    display: flex;
+    gap: 2rem;
+    @include m.telefono {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    a {
+        color: v.$blanco;
+        text-decoration: none;
+        font-size: 2.4rem;
+        &:hover { //El & elimina el espacio antes del : para dar resultado a:hover
+            color: v.$amarillo  
+        }    
+    }
+}
+
