@@ -6,6 +6,12 @@
     }
 }
 
+@mixin menosTelefono {
+    @media(max-width: v.$menosTelefono) {
+        @content;
+    }
+}
+
 @mixin tablet {
     @media(max-width: v.$tablet) {
         @content;
@@ -27,4 +33,16 @@
     width: 95%;
     max-width: 120rem;
     margin: 0 auto;
+}
+
+@mixin grid($columnas : 1, $gap : 5rem) {
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr);
+    gap: $gap;
+}
+
+@mixin resetear-lista {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
