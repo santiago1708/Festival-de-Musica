@@ -376,6 +376,19 @@ body > section {
 
 .header {
   background-color: #4CB8B3;
+  z-index: 100;
+}
+@media (max-width: 480px) {
+  .header.header-fixed {
+    display: none;
+  }
+}
+.header.header-fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  box-shadow: 0.1rem 0.2rem 0.3rem #333;
 }
 .header .contenido-header {
   display: flex;
@@ -414,7 +427,7 @@ body > section {
   text-decoration: none;
   font-size: 2.4rem;
 }
-.navegacion-principal a:hover {
+.navegacion-principal a:hover, .navegacion-principal a.active {
   color: #fdda00;
 }
 

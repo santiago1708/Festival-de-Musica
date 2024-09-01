@@ -3,6 +3,21 @@
 
 .header {
     background-color: v.$verde;
+    z-index: 100;
+    @include m.telefono {
+        &.header-fixed {
+            display: none;
+        }
+    }
+    &.header-fixed {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        box-shadow: .1rem .2rem .3rem #333;
+    }
+
+
     @include m.telefono {
 
     }
@@ -38,7 +53,7 @@
         color: v.$blanco;
         text-decoration: none;
         font-size: 2.4rem;
-        &:hover { //El & elimina el espacio antes del : para dar resultado a:hover
+        &:hover, &.active { //El & elimina el espacio antes del : para dar resultado a:hover
             color: v.$amarillo  
         }    
     }
